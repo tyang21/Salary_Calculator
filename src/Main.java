@@ -36,6 +36,13 @@ public class Main {
 		JCheckBox time = new JCheckBox("Full Time");
 		time.setBounds(50, 100, 100, 25);
 		myFrame.add(time);
+		time.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				weekInput.setEnabled(false);
+			}
+		});
 		
 		JLabel salary = new JLabel("Annual Salary:$");
 		salary.setBounds(50, 125, 200, 25);
